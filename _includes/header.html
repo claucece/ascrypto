@@ -1,0 +1,26 @@
+<header class="site-header">
+    <div class="wrapper">
+        <a class="site-title" href="{{ site.baseurl }}/" title="Home">
+				  <p>ASCrypto</p>
+        </a>
+
+      <div class="menu">
+          {% for page in site.pages %}
+            {% if page.tags == "menu" %}
+              <a class="menu-link" href="{{ page.url | prepend: site.baseurl }}" >{{ page.title }}</a>
+            {% endif %}
+          {% endfor %}
+        {% if page.layout == "post" %}
+          {% for page in site.pages %}
+            {% if page.tags == "menu" %}
+              <a class="menu-link" href="{{ page.url | prepend: site.baseurl }}" >{{ page.title }}</a>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </div>
+
+      <div class="division">
+			<div>
+
+    </div>
+</header>
