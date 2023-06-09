@@ -20,6 +20,9 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: $full-width;
+
+    background-image: radial-gradient(black 1px, transparent 0);
+    background-size: 40px 40px;
 }
 
 
@@ -85,7 +88,7 @@ a {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-    border: solid;
+    border: solid 0.5px;
 
     @extend %clearfix;
 
