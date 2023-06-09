@@ -8,6 +8,9 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+html {
+    display: flex;
+}
 
 /**
  * Basic styling
@@ -23,6 +26,10 @@ body {
 
     background-image: radial-gradient(black 1px, transparent 0);
     background-size: 40px 40px;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 
@@ -84,8 +91,6 @@ a {
  * Wrapper
  */
 .wrapper {
-    margin-right: auto;
-    margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     border: solid 0.5px;
