@@ -446,4 +446,10 @@
     max-width: 80%;
     margin-left: 15rem;
     margin-right: 15rem;
+
+    @include media-query($on-palm) {
+        max-width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 }
