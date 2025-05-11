@@ -1,0 +1,91 @@
+// _colors_2025.scss
+
+// Color Palette for LatinCrypt 2025
+$color-text-green-2025: #003C35;     // "LATINCRYPT" text
+$color-accent-pink: #F57F7A;         // Flower + asterisk
+$color-binary-green: #0B332C;        // Binary 0s
+$color-binary-red: #D44D49;          // Binary 1s
+$color-map-fill: #FDFBF2;            // Background fill
+$color-accent-coral: #F47B78;        // "2025" text
+$color-shadow-dark: #002F2B;         // Shadow
+
+// Utility variables
+$color-background: $color-map-fill;
+$color-primary-text: $color-text-green-2025;
+$color-highlight: $color-text-green-2025;
+
+
+.page-2025 {
+  background-color: $color-background;
+  color: $color-primary-text;
+  background-image: none; /* 💥 removes dots or any image */
+
+  h1,   h2, h3 {
+    color: $color-primary-text;
+  }
+
+    p, li, span, div {
+    color: $black-color;
+  }
+
+    thead {
+    color: $black-color;
+    background-color: $color-primary-text; // or another suitable background
+  }
+      th {
+    color: $black-color;
+    background-color: $color-primary-text; // or another suitable background
+  }
+
+a {
+    color: $black-color;
+    text-decoration: none;
+    background-color: $color-accent-pink
+;
+    padding: 5px;
+
+    &:hover {
+      color: $white-color;
+    }
+
+}
+
+  .menu {
+    clear: both;
+    float: right;
+    margin-top: -50px;
+    font-size: 20px;
+    border-bottom: solid 5px $color-background;
+
+    @include media-query($on-palm) {
+        margin-left: 90px;
+    }
+}
+
+  .menu-link {
+    background-color: $color-accent-coral;
+    border-top: 55px solid $color-background;
+
+    &,
+    &:hover {
+        color: $black-color;
+    }
+
+    @include media-query($on-palm) {
+        border-top: 0px;
+        border-right: 5px solid;
+        font-size: 16px;
+        text-align: right;
+        padding: 3px;
+    }
+}
+
+  .highlight {
+    background-color: $color-highlight;
+    color: white;
+  }
+
+  .shadow-box {
+    box-shadow: 2px 2px 5px $color-shadow-dark;
+  }
+}
